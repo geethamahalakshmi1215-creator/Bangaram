@@ -116,19 +116,16 @@ body {
 }
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-.photo-card {
-  position: relative;
-  min-height: 260px;
-  border-radius: 28px;
-  overflow: hidden;
-  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+.photo-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .quotes {
