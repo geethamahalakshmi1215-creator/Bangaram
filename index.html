@@ -142,10 +142,9 @@
     <button onclick="startBirthday()">🎂 Open Birthday Surprise 🎂</button>
 </div>
 
-<audio id="bgMusic" loop>
-   <source src="song.mp3.mpeg" type="audio/mpeg">
+<audio id="bgMusic" loop preload="auto">
+    <source src="song.mp3.mpeg" type="audio/mpeg">
 </audio>
-
 <script>
 function startBirthday() {
     document.getElementById("bgMusic").play();
