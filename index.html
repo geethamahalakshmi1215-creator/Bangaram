@@ -138,18 +138,18 @@
       });
     });
   </script>
-<div id="welcome">
-    <button onclick="startBirthday()">🎂 Open Birthday Surprise 🎂</button>
-</div>
-
-<audio controls>
-  <source src="/Bangaram/song.mp3.mpeg" type="audio/mpeg">
+<audio id="bgMusic" loop>
+    <source src="song.mp3" type="audio/mpeg">
 </audio>
+
 <script>
-function startBirthday() {
-    document.getElementById("bgMusic").play();
-    document.getElementById("welcome").style.display = "none";
-}
+window.addEventListener('load', () => {
+    const music = document.getElementById('bgMusic');
+
+    document.addEventListener('click', () => {
+        music.play();
+    }, { once: true });
+});
 </script>
 </body>
 </html>
